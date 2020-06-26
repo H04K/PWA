@@ -1,6 +1,5 @@
-if('serviceWorker' in navigator)
-{
-    navigator.serviceWorker.register('/sw.js')//Async Task return promise
-    .then((reg) => console.log("service worker registered",reg))
-    .catch((err)=> console.log("Service worker not registered",err)) //Promise Syntax
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js')
+    .then(reg => console.log('service worker registered'))
+    .catch(err => console.log('service worker not registered', err));
 }
