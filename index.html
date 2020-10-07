@@ -69,22 +69,30 @@
   </div>
 
   
-  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
-  <script>
-    // Your web app's Firebase configuration
-    var config = {
-      apiKey: "AIzaSyCtbkiWaZZv_8H1myEoKOR-CJOrbtw7cYA",
-      authDomain: "pwal-b9f31.firebaseapp.com",
-      databaseURL: "https://pwal-b9f31.firebaseio.com",
-      projectId: "pwal-b9f31",
-      storageBucket: "pwal-b9f31.appspot.com",
-      messagingSenderId: "197877231054",
-      appId: "1:197877231054:web:da9029e03b2cc5e3a7cf9f"
-    };
-    firebase.initializeApp(config);
-    const db = firebase.firestore();
-  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD0xDqzVQf0_1PzlalQ5lt33a2kOHnjIFA",
+    authDomain: "food-ninja-pwa-8dda1.firebaseapp.com",
+    databaseURL: "https://food-ninja-pwa-8dda1.firebaseio.com",
+    projectId: "food-ninja-pwa-8dda1",
+    storageBucket: "food-ninja-pwa-8dda1.appspot.com",
+    messagingSenderId: "170788632173",
+    appId: "1:170788632173:web:c7d68b9b43cc23e0ccb164",
+    measurementId: "G-WK057R6TBX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="/js/app.js"></script>
   <script src="/js/db.js"></script>
   <script src="/js/ui.js"></script>
